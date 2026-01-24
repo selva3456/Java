@@ -1,0 +1,48 @@
+import java.util.*;
+class greatestofthree
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args) 
+	{
+		System.out.print("\t\t\tEnter A:");
+		int a=sc.nextInt();
+		
+		System.out.print("\t\t\tEnter B:");
+		int b=sc.nextInt();
+		
+		System.out.print("\t\t\tEnter C:");
+		int c=sc.nextInt();
+		
+		int max=(a>b)? (a>c ? a:c) : (c>a ? c:a);
+		String res=(a>b)? (a>c)? "a":"c" :(c>a)? "c":"a";
+		System.out.println(max);
+		System.out.println(res);
+		
+	}
+}
+/*
+import java.util.*;
+class greatestofthree
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args) 
+	{
+		System.out.print("\t\t\tEnter A:");
+		int a=sc.nextInt();
+		System.out.print("\t\t\tEnter B:");
+		int b=sc.nextInt();
+		System.out.print("\t\t\tEnter C:");
+		int c=sc.nextInt();
+		int res=greatestofthree(a,b,c);
+		System.out.println("Greatest of Three Is:"+res);
+	}
+	public static int greatestofthree(int a,int b,int c)
+	{
+		if(a>b && a>c)
+			return a;
+		else if (b>c)
+		    return b;
+		else
+			return c;
+	}
+}*/	

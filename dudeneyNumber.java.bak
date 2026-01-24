@@ -1,0 +1,20 @@
+import java.util.*;
+class dudeneyNumber 
+{
+	public static void main(String[] args) 
+	{
+		double num=19683.0;//cube root is 27
+		double sum=0;
+		double cube=Math.cbrt(num);
+		while(num>0)
+		{
+			sum=sum+num%10;
+			num=num/10;
+		}
+		if(sum==cube)
+			System.out.println("DUDENEY NUMBER");
+		else
+			System.out.println("Not a DUDENEY");
+	}
+}
+//Math.cbrt()

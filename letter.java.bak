@@ -1,0 +1,24 @@
+import java.util.*;
+class letter
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main (String[]args)
+	{
+		System.out.print("\t\t\tEnter:");
+		char a=sc.next().charAt(0);
+		
+		if (a>='a' && a<='z')
+		{
+			System.out.println("LETTER");
+		}
+		else if(a>='A' && a<='Z')
+		    System.out.println("LETTER");
+		
+		else if (a>='0' && a<='9')
+			System.out.println("Number");
+		
+		else 
+			System.out.println("Special Char");
+	
+	}
+}

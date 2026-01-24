@@ -1,0 +1,21 @@
+import java.util.*;
+class Remote
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String []args)
+	{
+		
+		System.out.print("\t\t\tEnter mark:");
+		int mark=sc.nextInt();
+		
+		if(mark(90>=100))
+		{
+			System.out.println("Grade=A");
+		}
+	
+		else
+		{
+			System.out.println("Invalid");
+		}
+	}
+}

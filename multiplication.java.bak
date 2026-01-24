@@ -1,0 +1,18 @@
+class multiplication 
+{
+	public static void main(String[] args) 
+	{
+		double iwallet=100000;
+		System.out.println("intial wallet:"+iwallet);
+		double shoeprice=20000;
+		System.out.println("shoe price:"+shoeprice);
+		int quty=3;
+		System.out.println("quantity of shoe:"+quty);
+		double wallet=quty*shoeprice;
+		System.out.println("Total price of shoe:"+wallet);
+		int totalbal=(int)(iwallet-wallet);
+		System.out.println("wallet balance:"+totalbal);
+		greet("selva");
+		
+	}
+}

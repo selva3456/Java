@@ -1,0 +1,20 @@
+import java.util.*;
+class onetoN 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("enter n value:");
+		int n=sc.nextInt();
+		for(int i=1;i<=n;i++){
+			//if(i%2==0) This condition only for 1 to n only even number
+			System.out.print(i+" ");
+			
+		}
+	}
+}
+//or s.o.pln(i)-->1
+              //  2
+              //  3
+              //  4
+              //  5

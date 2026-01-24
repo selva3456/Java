@@ -1,0 +1,19 @@
+class printSubArray 
+{
+	public static void main(String[] args) 
+	{
+		int[]a={2,3,7,4,6};
+		for (int i=0;i<a.length ;i++ )
+		{
+			for (int j=i;j<a.length ;j++ )
+			{
+				for (int k=j;k<=j ;k++ )
+				{
+					System.out.print(a[k]+" ");
+				}
+				System.out.print("\t");
+			}
+			System.out.println();
+		}
+	}
+}

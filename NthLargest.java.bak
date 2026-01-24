@@ -1,0 +1,40 @@
+import java.util.*;
+class NthLargest
+{
+	static Scanner sc=new Scanner(System.in);
+	public static int findLargest(int[]a)
+	{
+		int largest=Integer.MIN_VALUE;
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]>largest)
+				largest=a[i];
+		}
+		return largest;
+	}	
+	public static void replaceLargest(int[]a,int largest)
+	{
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]==largest)
+				a[i]=Integer.MIN_VALUE;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter value of N:");
+		int n=sc.nextInt();
+		int[]a={8,4,3,11,18,14,28,8,7,4};
+		int largest=Integer.MIN_VALUE;
+		for (int i=1;i<=n ;i++ )
+		{
+			largest=findLargest(a);
+			replaceLargest(a,largest);
+		}
+		if(a[i]==largest)
+			System.out.println(largest);
+		else
+			System.out.println("Invalid That much array size not their");
+	}
+}
+    

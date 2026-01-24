@@ -1,0 +1,49 @@
+class reverseString 
+{
+	public static void main(String[] args) 
+	{
+		String s="SpiDeR";
+		System.out.println(s);
+		System.out.println(solve(s));
+	}
+	public static String solve(String s)
+	{
+		char[]a=s.toCharArray();
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]>='A' && a[i]<='Z')
+				a[i]+=32;
+			else if(a[i]>='a' && a[i]<='z')
+				a[i]-=32;
+		}
+		return new String(a);
+	}
+	
+}
+/*
+public static void main(String[] args) 
+	{
+	   String s="10110001";
+	   char[] res=reverse(s);
+	   System.out.println(res);
+	}
+	public static char[] reverse(String s)
+	{
+	   char[]a=s.toCharArray();
+	   char[]ch=new char[a.length];
+	   for (int x=0,i=a.length-1;i>=0 ;i-- )
+	   {
+		    ch[x++]=a[i];
+	   }
+	  return ch;
+	}
+	//this another method for reverse the string 
+	String s="10110001";
+	   String ans="";
+	   for (int i=s.length()-1;i>=0 ;i-- )
+	   {
+		 char ch=s.charAt(i); 
+		 ans+=ch;
+		}
+	   System.out.println(ans);
+*/

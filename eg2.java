@@ -1,0 +1,34 @@
+import java.util.*;
+class eg2
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		boolean flag=true;
+		do{
+			System.out.println("1.SQL\n2.JAVA\n3.EXIT");
+			System.out.print("Enter input:");
+			int user_input=sc.nextInt();
+		switch(user_input){
+			case 1->{
+				System.out.println("Vinod");
+			}	
+			case 2->{
+				System.out.println("Tabrez");
+			}
+			case 3->{
+				flag=false;
+			}
+			
+			default ->{
+				System.out.println("INVALID");
+			}	
+			}
+		}
+		
+				while(flag);
+					System.out.println("Thank You");
+					
+		 }
+	}
+

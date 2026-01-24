@@ -1,0 +1,17 @@
+class Selva 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("start");
+		int a=10;
+		System.out.println("a:"+a);
+		String b="14";
+		System.out.println("b:"+b);
+		String skill="SQL";
+		System.out.println("skill:"+skill);
+		skill="java";
+		a=24;
+		System.out.println("a:"+a);
+		System.out.println("END");
+	}
+}

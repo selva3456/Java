@@ -1,0 +1,24 @@
+class firstLastOccurence 
+{
+	public static void main(String[] args) 
+	{
+		int[]a={1,7,8,9,7,8,1,8};
+		find(a,8);
+	}
+	public static void find(int[]a,int target)
+	{
+		int first=-1;
+		int last=0;
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]==target)
+			{
+				last=i;
+				if(first==-1)
+					first=i;
+			}
+		}
+		System.out.println("First Occurence:"+first);
+		System.out.println("Last Occurence:"+last);
+	}
+}

@@ -1,0 +1,29 @@
+/*import java.util.*;
+class productExceptSelf
+{
+	public static void main(String[] args) 
+	{
+		int []a={1,2,3,4};
+		int []res=arrayExceptSelf(a);
+		System.out.println(Arrays.toString(res));
+		
+	}
+	public static int[] arrayExceptSelf(int []a)
+	{
+		int[]res=new int[a.length];
+		for (int i=0;i<a.length;i++ )
+		{
+			int ans=1;
+			for (int j=0;j<a.length;j++ )
+			{
+				if(i!=j)
+				ans*=a[j];
+			}
+			res[i]=ans;
+		}
+		return res;
+	}
+	
+}*/
+
+

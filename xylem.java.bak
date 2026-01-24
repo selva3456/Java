@@ -1,0 +1,51 @@
+/*class xylem 
+{
+	public static void main(String[] args) 
+	{
+		int a=1234;
+		int start=1,end=4;
+		int sumoffs=0;
+		if(a>0)
+		{
+			sumoffs=start+end;
+		}
+		int sum=0;
+		for (int i=a;i>0;i=i/10 )
+		{
+			sum=sum+i%10;
+		}
+		int sumofbet=sum-sumoffs;
+		if(sumofbet==sumoffs)
+			System.out.println("XYLEM");
+		else
+			System.out.println("Not a xylem");
+	}
+}*/
+class xylem
+{
+	public static void main(String[]args)
+	{
+		int num=612344;
+		int temp=num;
+		int sum=0;
+		int sum1=0;
+		int last=num%10;
+		while(num>9)
+		{
+			num=num/10;
+		}
+		sum=num+last;
+		while(temp>0)
+		{
+			int digit=0;
+			digit=temp%10;
+			sum1=sum1+digit;
+			temp=temp/10;
+		}
+		int total=sum1-sum;
+		if(total==sum)
+			System.out.println("XYLEM");
+		else
+			System.out.println("Not a XYLEM");
+	}
+}

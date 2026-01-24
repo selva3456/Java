@@ -1,0 +1,15 @@
+class test3 
+{
+	public static void main(String[] args) 
+	{
+		int p=5,q=20,r=25;
+		boolean res=(p+q ==r);
+		boolean res1=!(p*q <r);
+		boolean res2=(r+q == p+q);
+		boolean res3=(r>q || q+p == r); 
+		System.out.println(res);
+		System.out.println(res1);
+		System.out.println(res2);
+		System.out.println(res3);
+	}
+}

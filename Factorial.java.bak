@@ -1,0 +1,21 @@
+import java.util.*;
+class Factorial 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static int Factorial(int number) 
+	{
+		int ans=1;
+		for (int i=number;i>=2 ;i--)
+		{
+			ans=ans*i;
+		}
+		return ans;
+	}
+		public static void main(String[]args)
+	{
+		System.out.print("Enter number:");
+		int number=sc.nextInt();
+		int res=Factorial(number);
+		System.out.println("Factorial of Nummber Is:"+res);
+	}
+}

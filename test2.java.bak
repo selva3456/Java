@@ -1,0 +1,16 @@
+class test2 
+{
+	   String i="J2EE JAVA";
+
+	public static void main(String[] args) 
+	{
+		float a=2.3f;
+		double b=3.14d;
+		char c='T';
+		byte d=10;
+		int f=100;
+		long g=910;
+		boolean h=true;
+		System.out.println(i);
+	}
+}

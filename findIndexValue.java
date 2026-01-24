@@ -1,0 +1,25 @@
+class findIndexValue 
+{
+	public static void main(String[] args) 
+	{
+		String s="ABCDEAFDH";
+		System.out.println(s.indexOf('A'));
+		System.out.println(s.indexOf('d'));
+		System.out.println(s.indexOf('D'));
+		System.out.println(s.indexOf('E'));
+		System.out.println(s.indexOf('C'));
+		System.out.println(s.indexOf('R'));
+		System.out.println(s.indexOf('F'));
+		System.out.println(s.indexOf('H'));
+	}
+}
+/*
+0
+-1
+3
+4
+2
+-1
+6
+8
+*/

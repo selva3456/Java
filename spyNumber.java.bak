@@ -1,0 +1,20 @@
+class spyNumber 
+{
+	public static void main(String[] args) 
+	{
+		int num=1124;
+		int sum=0;
+		int mul=1;
+		while (num>0)
+		{
+			int last=num%10;
+			sum=sum+last;//intha place la last use panama num%10 nu kudukalam
+			mul=mul*last;
+			num=num/10;
+		}
+		if(sum==mul)
+			System.out.println("Spy Number");
+		else
+			System.out.println("Not a Spy Number");
+	}
+}//sum=1+1+2+4=8 and mul=1*1*2*4=8 if sum==mul ->(spy)

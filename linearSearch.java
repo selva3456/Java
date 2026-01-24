@@ -1,0 +1,23 @@
+import java.util.*;
+class linearSearch 
+{
+	public static void main(String[] args) 
+	{
+		String[]girls={"samantha","pooja","harini","priya","kani","sweety"};
+		int table=search(girls,"kannan");
+		if(table!=-1)
+			System.out.println("data is found-table no"+table);
+		else
+			System.out.println("data is Not found go to home");
+		
+	}
+	public static int search(String[]girls,String name)
+	{
+		for (int i=0;i<girls.length ;i++ )
+		{
+			if(girls[i]==name)
+				return i;
+		}
+		return -1;
+	}
+}

@@ -1,0 +1,30 @@
+import java.util.*;
+class happyNumber
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		System.out.print("Enter number:");
+		int number=sc.nextInt();
+		if (isHappyNum(number))
+		{
+			System.out.println("Happy Number");
+		}
+		else
+			System.out.println("Unhappy Number");
+	}
+	public static boolean isHappyNum(int number)
+	{
+		while (number!=1 && number!=4)
+		{
+			int sum=0;
+			while (number>0)
+			{
+				sum+=(number%10)*(number%10);
+				number/=10;
+			}
+			number=sum;
+		}
+		return number==1;
+	}
+}

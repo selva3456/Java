@@ -1,0 +1,25 @@
+class stringSwap 
+{
+	public static void main(String[] args) 
+	{
+		String s="Ta23re12Z";
+		char[]a=s.toCharArray();
+		int l=0,r=a.length-1;
+		for (int i=0;i<r ;i++ )
+		{
+			if (Character.isLetter(a[l]) && Character.isLetter(a[r]))
+			{
+				char temp=a[l];
+				a[l]=a[r];
+				a[r]=temp;
+				l++;
+				r--;
+			}
+			if(Character.isDigit(a[l]))
+				l++;
+			if (Character.isDigit(a[r]))
+				r--;
+		}
+		System.out.println(a);
+	}
+}

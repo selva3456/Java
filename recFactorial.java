@@ -1,0 +1,25 @@
+import java.util.*;
+class recFactorial 
+{
+	static Scanner sc=new Scanner(System.in);
+	static int ans=1;
+	public static void main(String[] args) 
+	{
+		System.out.println("Start");
+		System.out.println("Enter number");
+		int number=sc.nextInt();
+		int res=factorial(number);
+		System.out.println(res+" ");
+		System.out.println("Ends");
+	}
+	public static int factorial(int number)
+	{
+		if(number>=2)
+		{
+			ans=ans*number;
+			number--;
+			factorial(number);
+		}
+		return ans;
+	}
+}

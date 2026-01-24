@@ -1,0 +1,22 @@
+import java.util.*;
+class insertionSort
+{
+	public static void main(String[] args) 
+	{
+		int[]a={5,4,3,1,2};
+		System.out.println(Arrays.toString(a));
+		for (int i=1;i<a.length ;i++ )
+		{
+			int cur=a[i];
+			int prev=i-1;
+			//when i am having cards for comparison
+			while(prev>=0 && a[prev]>cur)
+			{
+				a[prev+1]=a[prev];
+				prev--;
+			}
+			a[prev+1]=cur;
+		}
+		System.out.println(Arrays.toString(a));
+	}
+}

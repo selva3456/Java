@@ -1,0 +1,17 @@
+class friends
+{
+
+	public static void main(String[] args) 
+	{
+		int marriage =5;
+		
+		if (marriage>10)
+		{
+		System.out.println("married");
+		
+	}
+	else {
+		System.out.println("single");
+	}
+	}
+}

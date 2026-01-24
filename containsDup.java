@@ -1,0 +1,23 @@
+import java.util.*;
+class containsDup
+{
+	public static void main(String[] args) 
+	{
+		int[]a={1,8,7,2,3,8,9};
+		System.out.println(Arrays.toString(a));
+		System.out.println(containsDup(a));
+	}
+	public static boolean containsDup(int[]a)
+	{
+		Arrays.sort(a);
+		for (int i=0;i<a.length-1;i++ ) 
+		{
+			if(a[i]==a[i+1])
+				return true;
+		}
+		return false;
+	}
+}
+//ipa a{1,2,3,2,5} ipti iruntha (i<a.length) or also give (i<a.length-1)kuduthukalam
+//a{2,4,3,5,7} ipti iruntha i<a.length-1 mattum tha kudukanum ilana array index out of bound error varum
+//yena 7 ah compare panraku value irukathu so error came

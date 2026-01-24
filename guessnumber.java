@@ -1,0 +1,32 @@
+import java.util.*;
+class guessnumber
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		boolean flag=true;
+		int sys_guess=(int)(Math.random()*100);
+		do{
+		System.out.print("**Welcome to the game of GUESS THE NUMBER**");
+		System.out.print("\t\t\tEnter number:");
+		int user_guess=sc.nextInt();
+		if(user_guess>sys_guess)
+			System.out.println("High");
+		else if(user_guess<sys_guess)
+			System.out.println("Low");
+		else{
+			System.out.println("Your Guess Is Correct");
+		
+		System.out.println("\t\t\tDo you want to continue:(Y/N)");
+		System.out.print("\t\t\tEnter Here:");
+		char val=sc.next().charAt(0);
+		if(val== 'y' || val=='Y')
+		sys_guess=(int)(Math.random()*100);
+		else 
+			flag=false;
+		}
+	}
+	while(flag);
+	System.out.println("Thank You For Playing");
+}
+}

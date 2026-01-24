@@ -1,0 +1,17 @@
+class selva1
+{
+	public static void main(String[] args) 
+	{
+		int stdId=21;
+		double mark=8.0;
+		float per =34.1f;
+		long phno=9150098353l;
+		char gender='M';
+		
+		System.out.println("selva Id is:" +stdId);
+		System.out.println("selva Mark is:"+mark);
+		System.out.println("selva per is:"+per);
+		System.out.println("selva phno is:"+phno);
+		System.out.println("selva Gender is:"+gender);
+	}
+}

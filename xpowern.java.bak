@@ -1,0 +1,23 @@
+import java.util.*;
+class xpowern
+{
+	static Scanner sc=new Scanner(System.in);
+	public static int xpowern(int x,int n)
+	{
+		int ans=1;
+		for (int i=1;i<=n ;i++ )
+		{
+			ans=ans*i;
+		}
+		return ans;
+	}
+	public static void main(String[]args)
+	{
+		System.out.print("Enter X:");
+		int x=sc.nextInt();
+		System.out.print("Enter N:");
+		int n=sc.nextInt();
+		int res=xpowern(x,n);
+		System.out.println("XPowerN is:"+res);
+	}
+}

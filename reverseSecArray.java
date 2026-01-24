@@ -1,0 +1,53 @@
+/*import java.util.*;
+class reverseSecArray
+{
+	public static void main(String[] args) 
+	{
+		int[]a={10,20,30,40};
+		int[]b={50,60,70,80};
+		int[]res=new int[a.length+b.length];
+		for (int i=0;i<a.length;i++)
+		{
+          res[i]=a[i];
+		}
+		int x=a.length;
+		for (int j=b.length-1;j>=0 ;j-- )
+		{
+			res[x]=b[j];
+			x++;
+		}
+		 System.out.println("Merged and reversed array:");
+         for (int i = 0; i < res.length; i++) {
+            System.out.print(res[i] + " ");
+        }
+	}
+	
+}*/
+import java.util.*;
+class reverseSecArray
+{
+public static int[] revmerge(int[]a,int[]b)
+{
+	int[]res=new int[a.length+b.length];
+	for (int i=0,x=0;i<res.length;i++)
+	{
+		if (x<a.length)
+			res[i]=a[x++];
+	}
+	for (int i=res.length-1,y=0;i>=res.length/2;i--)
+	{
+		if (y<b.length)
+		    res[i]=b[y++];
+	}
+	return res;
+}
+  public static void main(String[]args)
+	{
+		int[]a={10,20,30,40};
+		int[]b={50,60,70,80};
+		int[]res=revmerge(a,b);
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(res));
+	}
+}

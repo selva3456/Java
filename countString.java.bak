@@ -1,0 +1,29 @@
+class countString 
+{
+	public static void main(String[] args) 
+	{
+		String s="aaabbaac";//a3b2a2c1
+		String res=countString(s);
+		System.out.println(s);
+		System.out.println(res);
+	}
+	public static String countString(String s)
+	{
+		char[]a=s.toCharArray();
+		String ans="";
+		int count=1;
+		for (int i=0;i<a.length-1 ;i++ )
+		{
+			if(a[i]==a[i+1])
+				count++;
+			else  
+			{
+				ans+=a[i]+""+count;
+			    count=1;
+			}
+		}
+		ans=ans+a[a.length-1]+""+count;
+		return ans;
+	}
+		
+}

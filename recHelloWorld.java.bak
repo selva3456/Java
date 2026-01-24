@@ -1,0 +1,21 @@
+//WAJP to print hello world 4 times without using loop
+class recHelloWorld
+{
+	
+	public static void solve(String msg) 
+	{
+		int count=1;
+		if(count<=4)
+		{
+			System.out.println(msg);
+			count++;
+			solve(msg);
+		}
+	}
+	public static void main(String[]args)
+	{
+		System.out.println("Start");
+		solve("Hello World");
+		System.out.println("End");
+	}
+}

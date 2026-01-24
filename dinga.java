@@ -1,0 +1,19 @@
+class dinga  
+{
+	public static void main(String[]args)
+	{
+		System.out.println("my name selva");
+		dinga(false);
+		System.out.println(" ends");
+	}
+	public static void dinga(boolean a) 
+	{
+		if (a)
+		{
+			System.out.println("Java");
+		}
+		else if
+			System.out.println("sql");
+		
+	}
+}

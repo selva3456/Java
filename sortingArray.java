@@ -1,0 +1,13 @@
+class import java.util.*;
+class sortingArray 
+{
+	public static void main(String[] args) 
+	{
+		int[]a={2,9,3,5,4,8,7,1,6};
+		System.out.println(Arrays.toString(a));
+	    Arrays.sort(a);
+		System.out.println(Arrays.toString(a));
+	}
+}
+ 
+

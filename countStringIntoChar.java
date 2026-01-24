@@ -1,0 +1,30 @@
+class countStringIntoChar 
+{
+	public static void main(String[] args) 
+	{
+		String s="AbcRBd834K$h#";
+		System.out.println(s);
+		System.out.println();
+		solve(s);
+	}
+	public static void solve(String s)
+	{
+		char[]a=s.toCharArray();
+		int up_count=0,lc_count=0,num_count=0,spl_count=0;
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(Character.isUpperCase(a[i]))
+				up_count++;
+			else if(Character.isLowerCase(a[i]))
+				lc_count++;
+			else if(Character.isDigit(a[i]))
+				num_count++;
+			else
+				spl_count++;
+		}
+		System.out.println("Total UpperCase:"+up_count);
+		System.out.println("Total LowerCase:"+lc_count);
+		System.out.println("Total Numbers:"+num_count);
+		System.out.println("Total Special Character:"+spl_count);
+	}
+}

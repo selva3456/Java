@@ -1,0 +1,25 @@
+class countPrimeInArray 
+{
+	public static boolean isPrime(int number)
+	{
+		if(number==0 || number==1)
+			return false;
+		for (int i=2;i<number ;i++ )
+		{
+			if(number%i==0)
+				return false;
+		}
+		return true;
+	}
+	public static void main(String[] args) 
+	{
+		int count=0;
+		int[]a={1,2,4,5,6,3,11,21,13};
+		for (int i=0;i<a.length;i++ )
+		{
+			if(isPrime(a[i]))
+				count++;
+		}
+			System.out.println("The Total Count Of Prime is:"+count);
+	}
+}
